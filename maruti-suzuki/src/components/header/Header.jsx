@@ -56,7 +56,7 @@ const Header = () => {
         <header>
             <nav className="navbar">
                 <div className="left-logo">
-                    <a href=""><img src={marutilogo} alt="logo" className="logo" /></a>
+                    <a href="#"><img src={marutilogo} alt="logo" className="logo" /></a>
                 </div>
                 <div className="mid-navbar">
                     <ul>
