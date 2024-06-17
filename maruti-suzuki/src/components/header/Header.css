@@ -9,6 +9,7 @@ header {
     align-items: center;
     font-family: "Poppins", sans-serif;
     position: relative;
+    z-index: 1200;
   }
   
   .navbar{
@@ -39,6 +40,7 @@ header {
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1100;
   }
 
   .dropdown-menu.open{
