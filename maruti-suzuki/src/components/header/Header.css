@@ -67,6 +67,14 @@ header {
     justify-content: center;
   }
 
+  .dropdown-nav-btn{
+    transition: 0.5s;
+  }
+
+  .dropdown-nav-btn:hover{
+    transform: scale(1.2);
+  }
+
   @media(max-width: 992px){
     .mid-navbar, .right-navbar{
       display: none;
