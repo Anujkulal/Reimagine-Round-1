@@ -43,8 +43,10 @@ const Footer = () => {
                 <div className="footer-contents">
                     <div className="reach-us-col">
                         <h3>REACH US</h3>
-                        <a href="#" className="btn">LOCATE A DEALER</a>
-                        <a href="#" className="btn">BOOK SHOWROOM VISIT</a>
+                        <div className='reachus-container'>
+                            <a href="#" className="btn">LOCATE A DEALER</a>
+                            <a href="#" className="btn">BOOK SHOWROOM VISIT</a>
+                        </div>
                     </div>
 
                     <section className="about-section">

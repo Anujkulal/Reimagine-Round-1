@@ -1,5 +1,4 @@
 
-
 *{
     margin: 0;
     padding: 0;
@@ -10,19 +9,12 @@ footer{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    /* background-color: #1a1919; */
-    min-height: 100vh;
+    min-height: 140vh;
     font-family: "Poppins", sans-serif;
 }
 
 
-
 /* ***********Footer background********** */
-
-/* .footer-background{
-    
-} */
-
 footer .footer-container{
     position: relative;
     width: 100%;
@@ -118,6 +110,12 @@ footer .wave#wave4{
     color: #ffffff;
     margin-left: 15px;
     font-size: 13px;
+}
+
+.reachus-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-section{
