@@ -87,8 +87,8 @@ const Header = () => {
                 <li><a href="#" className="dropdown-nav-btn">Important customer info</a></li>
                 <div className='dropdown-row'>
                     <li><a href="#"><img src={logo2} alt="Engage logo" className="logo2" /></a></li>
-                    <li><a href=""><i className="fa-solid fa-user"></i></a></li>
-                    <li><a href=""><i className="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i className="fa-solid fa-user"></i></a></li>
+                    <li><a href="#"><i className="fa-solid fa-magnifying-glass"></i></a></li>
                 </div>
             </nav>
     </header>
