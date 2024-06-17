@@ -42,7 +42,7 @@ header {
   }
 
   .dropdown-menu.open{
-    height: 413px;
+    height: 350px;
     display: block;
   }
 
@@ -57,6 +57,12 @@ header {
   .dropdown-menu li a{
     text-decoration: none;
     color: #ffffff;
+  }
+
+  .dropdown-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   @media(max-width: 992px){
@@ -140,11 +146,6 @@ header {
   
   .mid-navbar ul li a span.hover {
     transform: translateY(-35px);
-  }
-  
-  
-  .right-navbar{
-  
   }
   
   .logo2{
