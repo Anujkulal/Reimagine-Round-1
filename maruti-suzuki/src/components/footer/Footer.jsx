@@ -8,26 +8,26 @@ const Footer = () => {
     useEffect(() => {
         const upArrow = document.querySelector('.up-arrow');
 
-        // if (upArrow) {
+        if (upArrow) {
             upArrow.addEventListener('click', () => {
                 window.scrollTo({
                     top: 0,
                     behavior: 'smooth'
                 });
             });
-        // }
+        }
 
         // Cleanup event listener on component unmount
-        // return () => {
-        //     if (upArrow) {
-        //         upArrow.removeEventListener('click', () => {
-        //             window.scrollTo({
-        //                 top: 0,
-        //                 behavior: 'smooth'
-        //             });
-        //         });
-        //     }
-        // };
+        return () => {
+            if (upArrow) {
+                upArrow.removeEventListener('click', () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        };
     }, []);
 
     return (
