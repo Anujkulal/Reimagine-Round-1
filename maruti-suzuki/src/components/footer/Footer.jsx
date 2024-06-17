@@ -118,11 +118,11 @@ const Footer = () => {
                     </section>
 
                     <section className="bottom-footer">
-                        <p className="copyright">&copy; Maruti Suzuki India Limited</p>
-                        <p>Terms of Use</p>
-                        <p>Data Provider Consent Policy</p>
-                        <p>Privacy Policy</p>
-                        <p>Sitemap</p>
+                        <p className="copyright">| &copy; Maruti Suzuki India Limited |</p>
+                        <p>| Terms of Use |</p>
+                        <p>| Data Provider Consent Policy |</p>
+                        <p>| Privacy Policy |</p>
+                        <p>| Sitemap |</p>
                         <div className="up-arrow">
                             <i className="fas fa-arrow-up"></i>
                         </div>
