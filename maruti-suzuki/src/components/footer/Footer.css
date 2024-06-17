@@ -45,19 +45,16 @@ footer .wave#wave1{
 footer .wave#wave2{
     z-index: 999;
     opacity: 0.5;
-    /* bottom: 10px; */
     animation: animate2 5s linear infinite;
 }
 footer .wave#wave3{
     z-index: 998;
     opacity: 0.2;
-    /* bottom: 10px; */
     animation: animate2 7s linear infinite;
 }
 footer .wave#wave4{
     z-index: 100;
     opacity: 0.7;
-    /* bottom: 10px; */
     animation: animate2 8s linear infinite;
 }
 
