@@ -232,12 +232,12 @@ footer .wave#wave4{
 }
 
 .up-arrow{
-    background-color: #000;
-    border: 2px solid black;
+    background-image: linear-gradient(to left, #005f9b, #a50292);
+    border: 2px solid #ffffff;
     border-radius: 50%;
     width: 30px;
 }
 
 .up-arrow i{
-   margin-left: 5px;
+   margin-left: 7px;
 }
