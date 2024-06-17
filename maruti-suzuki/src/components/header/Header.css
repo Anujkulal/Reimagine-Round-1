@@ -8,6 +8,7 @@ header {
     justify-content: center;
     align-items: center;
     font-family: "Poppins", sans-serif;
+    position: relative;
   }
   
   .navbar{
@@ -15,6 +16,66 @@ header {
     display: flex;
      align-items: center;
     justify-content: space-between; 
+  }
+
+  .navbar .toggle-btn{
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: none;
+  }
+
+  /* <--------------Dropdown-------------------> */
+  .dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .dropdown-menu.open{
+    height: 413px;
+    display: block;
+  }
+
+  .dropdown-menu li{
+    list-style: none;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dropdown-menu li a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  @media(max-width: 992px){
+    .mid-navbar, .right-navbar{
+      display: none;
+    }
+    .navbar .toggle-btn{
+      display: block;
+    }
+    .dropdown-menu{
+      display: block;
+    }
+  }
+
+  @media(max-width: 576px){
+    .dropdown-menu{
+      left: 2rem;
+      width: unset;
+    }
   }
   
   .logo{
@@ -43,9 +104,7 @@ header {
   
   .nav-btn {
     background-image: linear-gradient(to right, #005f9b, #a50292);
-    
     color: #ffffff;
-    font-family: "Poppins", sans-serif;
     font-size: 12px;
     text-decoration: none;
     padding: 10px;
@@ -66,7 +125,6 @@ header {
     box-shadow: 0 0 25px #a50292,
     0 0 100px #a50292,
     0 0 150px #a50292;
-    /* color: #ffffff; */
   }
   
   .mid-navbar ul li a span {
@@ -100,22 +158,6 @@ header {
     transform: scale(1.2);
   }
   
-  /* .fa-whatsapp{
-    color: #04ff25;
-    font-size: 30px;
-    margin-right: 10px;
-    transition: 0.3s;
-  } */
-  
-  /* .fa-whatsapp:hover{
-    transform: scale(1.3);
-    color: #01ac18;
-    box-shadow: 0 0 25px #04ff25,
-    0 0 100px #04ff25,
-    0 0 150px #04ff25;
-    z-index: 2;
-  } */
-  
   .fa-user, .fa-magnifying-glass{
     font-size: 18px;
     color: #ffffff;
@@ -128,7 +170,4 @@ header {
   .fa-user:hover, .fa-magnifying-glass:hover{
     transform: scale(1.3);
     color: #007bff;
-    /* box-shadow: 0 0 25px #ffffff,
-    0 0 100px #ffffff,
-    0 0 150px #ffffff; */
   }

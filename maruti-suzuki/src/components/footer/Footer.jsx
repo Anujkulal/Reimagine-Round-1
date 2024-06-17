@@ -125,36 +125,33 @@
 
 import React, { useEffect } from 'react';
 import './Footer.css';
-// import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css';
-
 import googleimg from '../../assets/images/google-play-store-logo.png';
 import appleimg from '../../assets/images/Download_on_the_App_Store_Badge.png'
 
 const Footer = () => {
-
     useEffect(() => {
         const upArrow = document.querySelector('.up-arrow');
 
-        if (upArrow) {
+        // if (upArrow) {
             upArrow.addEventListener('click', () => {
                 window.scrollTo({
                     top: 0,
                     behavior: 'smooth'
                 });
             });
-        }
+        // }
 
         // Cleanup event listener on component unmount
-        return () => {
-            if (upArrow) {
-                upArrow.removeEventListener('click', () => {
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                });
-            }
-        };
+        // return () => {
+        //     if (upArrow) {
+        //         upArrow.removeEventListener('click', () => {
+        //             window.scrollTo({
+        //                 top: 0,
+        //                 behavior: 'smooth'
+        //             });
+        //         });
+        //     }
+        // };
     }, []);
 
     return (

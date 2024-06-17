@@ -36,6 +36,22 @@ const Header = () => {
         });
     }, []);
 
+    useEffect(() => {
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const toggleBtnIcon = document.querySelector('.toggle-btn i');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        toggleBtn.onclick = function (){
+            dropdownMenu.classList.toggle('open');
+            const isOpen = dropdownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    
+    }, []);
+
     return (
         <header>
             <nav className="navbar">
@@ -56,8 +72,23 @@ const Header = () => {
                     <a href=""><img src={logo2} alt="Engage logo" className="logo2" /></a>
                     <a href=""><i className="fa-solid fa-user"></i></a>
                     <a href=""><i className="fa-solid fa-magnifying-glass"></i></a>
-            </div>
-        </nav>
+                </div>
+                <div className='toggle-btn'>
+                    <i className="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <nav className='dropdown-menu'>
+                <li><a href="#" className="dropdown-nav-btn">Home</a></li>
+                <li><a href="#" className="dropdown-nav-btn">Corporate</a></li>
+                <li><a href="#" className="dropdown-nav-btn">Sales</a></li>
+                <li><a href="#" className="dropdown-nav-btn">Service</a></li>
+                <li><a href="#" className="dropdown-nav-btn">More from us</a></li>
+                <li><a href="#" className="dropdown-nav-btn">Important customer info</a></li>
+                <li><a href=""><img src={logo2} alt="Engage logo" className="logo2" /></a></li>
+                <li><a href=""><i className="fa-solid fa-user"></i></a></li>
+                <li><a href=""><i className="fa-solid fa-magnifying-glass"></i></a></li>
+            </nav>
     </header>
     )};
     
