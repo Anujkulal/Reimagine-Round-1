@@ -35,7 +35,7 @@ header {
     top: 60px;
     height: 0;
     width: 300px;
-    background: rgba(255, 255, 255, 0.1);
+    background: #0f0e13c2;
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -73,6 +73,7 @@ header {
 
   .dropdown-nav-btn:hover{
     transform: scale(1.2);
+    color: #b4bdff;
   }
 
   @media(max-width: 992px){
