@@ -10,10 +10,9 @@ import car6 from '../../assets/images/cars/car6.webp';
 import car7 from '../../assets/images/cars/car7.jpg';
 import './Cars.css';
 
-
 gsap.registerPlugin(ScrollToPlugin);
 
-const App = () => {
+const Cars = () => {
   const scrollContainerRef = useRef(null);
   const scrollContentRef = useRef(null);
   const autoScrollRef = useRef(null);
@@ -128,4 +127,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Cars;
