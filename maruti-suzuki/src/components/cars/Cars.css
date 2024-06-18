@@ -109,6 +109,8 @@ button:hover {
     .car{
         width: 250px;
         height: 300px;
-        /* margin: 0 15px; */
+    }
+    .car-details p{
+        font-size: 13px;
     }
 }
