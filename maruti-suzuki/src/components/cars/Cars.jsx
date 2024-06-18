@@ -1,7 +1,15 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import car1 from '../../assets/images/cars/car1.webp';
+import car2 from '../../assets/images/cars/car2.avif';
+import car3 from '../../assets/images/cars/car3.jpg';
+import car4 from '../../assets/images/cars/car4.jpeg';
+import car5 from '../../assets/images/cars/car5.jpeg';
+import car6 from '../../assets/images/cars/car6.webp';
+import car7 from '../../assets/images/cars/car7.jpg';
 import './Cars.css';
+
 
 gsap.registerPlugin(ScrollToPlugin);
 
