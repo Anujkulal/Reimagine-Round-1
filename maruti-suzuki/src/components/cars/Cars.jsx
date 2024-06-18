@@ -13,59 +13,52 @@ import './Cars.css';
 gsap.registerPlugin(ScrollToPlugin);
 
 const Cars = () => {
-  const scrollContainerRef = useRef(null);
-  const scrollContentRef = useRef(null);
-  const autoScrollRef = useRef(null);
-  let direction = useRef(1); // 1 for forward, -1 for backward
 
   useEffect(() => {
-    const scrollContainer = scrollContainerRef.current;
-    const cars = scrollContentRef.current.querySelectorAll('.car');
-    
-    if (!scrollContainer || cars.length === 0) {
-      console.error('Required elements are missing or there are no cars.');
-      return;
-    }
-    
-    const carWidth = cars[0].offsetWidth + parseInt(getComputedStyle(cars[0]).marginLeft) + parseInt(getComputedStyle(cars[0]).marginRight);
-    const totalWidth = carWidth * cars.length;
-
-    const startAutoScroll = () => {
-      const targetX = direction.current === 1 ? totalWidth - scrollContainer.offsetWidth : 0;
+          const scrollContainer = document.querySelector('.scroll-container');
+      const scrollContent = document.querySelector('.scroll-content');
+      const cars = document.querySelectorAll('.car');
       
-      autoScrollRef.current = gsap.to(scrollContainer, {
-        scrollTo: { x: targetX },
-        duration: 10, 
-        ease: "linear",
-        onComplete: () => {
-        //   direction.current *= -1; // Reverse the direction
-          startAutoScroll();
-        }
+      if (!scrollContainer || !scrollContent || cars.length === 0) {
+          console.error('Required elements are missing or there are no cars.');
+          return;
+      }
+      
+      const carWidth = cars[0].offsetWidth + parseInt(getComputedStyle(cars[0]).marginLeft) + parseInt(getComputedStyle(cars[0]).marginRight);
+      const totalWidth = carWidth * cars.length;
+      
+      let autoScroll;
+      let direction = 1; // 1 for forward, -1 for backward
+      
+      function startAutoScroll() {
+          const targetX = direction === 1 ? totalWidth - scrollContainer.offsetWidth : 0;
+          
+          autoScroll = gsap.to(scrollContainer, {
+              scrollTo: { x: targetX },
+              duration: 15, 
+              ease: "linear",
+              onComplete: () => {
+                  direction *= -1; // Reverse the direction
+                  startAutoScroll();
+              }
+          });
+      }
+      
+      scrollContainer.addEventListener('mouseenter', () => {
+          if (autoScroll) autoScroll.pause();
       });
-    };
-
-    startAutoScroll();
-
-    const handleMouseEnter = () => {
-      if (autoScrollRef.current) autoScrollRef.current.pause();
-    };
-
-    const handleMouseLeave = () => {
-      if (autoScrollRef.current) autoScrollRef.current.play();
-    };
-
-    scrollContainer.addEventListener('mouseenter', handleMouseEnter);
-    scrollContainer.addEventListener('mouseleave', handleMouseLeave);
-
-    return () => {
-      scrollContainer.removeEventListener('mouseenter', handleMouseEnter);
-      scrollContainer.removeEventListener('mouseleave', handleMouseLeave);
-    };
+      
+      scrollContainer.addEventListener('mouseleave', () => {
+          if (autoScroll) autoScroll.play();
+      });
+      
+      startAutoScroll();
+  
   }, []);
 
   return (
-    <div className="scroll-container" ref={scrollContainerRef}>
-      <div className="scroll-content" ref={scrollContentRef}>
+    <div className="scroll-container">
+      <div className="scroll-content">
         <div className="car">
           <img src={car1} alt="Car 1" />
           <div className="car-details">
