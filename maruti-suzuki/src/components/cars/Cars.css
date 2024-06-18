@@ -91,3 +91,15 @@ button:hover {
     transform: translateY(-50%);
     z-index: 1;
 }
+
+@media(max-width: 992px){
+    .scroll-container{
+        padding-left: 0;
+    }
+
+    .car{
+        width: 300px;
+        height: 350px;
+        margin: 0 15px;
+    }
+}

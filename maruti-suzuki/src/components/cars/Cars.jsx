@@ -15,7 +15,10 @@ gsap.registerPlugin(ScrollToPlugin);
 const Cars = () => {
 
   useEffect(() => {
-          const scrollContainer = document.querySelector('.scroll-container');
+    
+    document.addEventListener('DOMContentLoaded', () => {
+
+      const scrollContainer = document.querySelector('.scroll-container');
       const scrollContent = document.querySelector('.scroll-content');
       const cars = document.querySelectorAll('.car');
       
@@ -53,6 +56,8 @@ const Cars = () => {
       });
       
       startAutoScroll();
+      
+  });
   
   }, []);
 
