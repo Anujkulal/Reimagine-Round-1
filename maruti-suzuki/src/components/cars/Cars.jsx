@@ -35,10 +35,10 @@ const Cars = () => {
       
       autoScrollRef.current = gsap.to(scrollContainer, {
         scrollTo: { x: targetX },
-        duration: 15, 
+        duration: 10, 
         ease: "linear",
         onComplete: () => {
-          direction.current *= -1; // Reverse the direction
+        //   direction.current *= -1; // Reverse the direction
           startAutoScroll();
         }
       });
@@ -67,7 +67,7 @@ const Cars = () => {
     <div className="scroll-container" ref={scrollContainerRef}>
       <div className="scroll-content" ref={scrollContentRef}>
         <div className="car">
-          <img src="images/car1.webp" alt="Car 1" />
+          <img src={car1} alt="Car 1" />
           <div className="car-details">
             <p>Model: WAGON R</p>
             <p>Name: Maruti Suzuki Wagon R</p>
@@ -75,7 +75,7 @@ const Cars = () => {
           </div>
         </div>
         <div className="car">
-          <img src="images/car2.avif" alt="Car 2" />
+          <img src={car2} alt="Car 2" />
           <div className="car-details">
             <p>Model: BALENO</p>
             <p>Name: Maruti Suzuki Baleno</p>
@@ -83,7 +83,7 @@ const Cars = () => {
           </div>
         </div>
         <div className="car">
-          <img src="images/car3.jpg" alt="Car 3" />
+          <img src={car3} alt="Car 3" />
           <div className="car-details">
             <p>Model: S-PRESSO</p>
             <p>Name: Maruti Suzuki S-Presso</p>
@@ -91,7 +91,7 @@ const Cars = () => {
           </div>
         </div>
         <div className="car">
-          <img src="images/car4.jpeg" alt="Car 4" />
+          <img src={car4} alt="Car 4" />
           <div className="car-details">
             <p>Model: FRONX</p>
             <p>Name: Maruti Suzuki Fronx</p>
@@ -99,7 +99,7 @@ const Cars = () => {
           </div>
         </div>
         <div className="car">
-          <img src="images/car5.jpeg" alt="Car 5" />
+          <img src={car5} alt="Car 5" />
           <div className="car-details">
             <p>Model: SWIFT</p>
             <p>Name: Maruti Suzuki Swift</p>
@@ -107,7 +107,7 @@ const Cars = () => {
           </div>
         </div>
         <div className="car">
-          <img src="images/car6.webp" alt="Car 6" />
+          <img src={car6} alt="Car 6" />
           <div className="car-details">
             <p>Model: IGNIS</p>
             <p>Name: Maruti Suzuki Ignis</p>
@@ -115,7 +115,7 @@ const Cars = () => {
           </div>
         </div>
         <div className="car">
-          <img src="images/car7.jpg" alt="Car 7" />
+          <img src={car7} alt="Car 7" />
           <div className="car-details">
             <p>Model: BALENO</p>
             <p>Name: Maruti Suzuki Baleno</p>
