@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* margin: 0; */
+    /* padding: 20px; */
+    background-color: #f4f4f4;
+}
+
+.scroll-container {
+    width: 100%;
+    /* height: 100px; */
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    /* margin: 20px 0; */
+    /* border: 2px solid #ccc; */
+    padding: 40px;
+    /* background-color: #b11d1d; */
+    position: relative;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none; 
+}
+
+.scroll-content {
+    display: inline-flex;
+}
+
+.car {
+    display: inline-block;
+    width: 350px;
+    height: 400px; 
+    margin: 0 30px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; 
+}
+
+.car:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.5);
+}
+
+.car img {
+    width: 100%;
+    height: 70%; 
+    display: block;
+    border-radius: 10px 10px 0 0; 
+    object-fit: contain; 
+}
+
+.car-details {
+    padding: 10px;
+    text-align: center;
+}
+
+.car-details p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#scroll-left {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+#scroll-right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
