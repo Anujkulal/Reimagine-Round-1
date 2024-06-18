@@ -94,12 +94,21 @@ button:hover {
 
 @media(max-width: 992px){
     .scroll-container{
-        padding-left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .car{
         width: 300px;
         height: 350px;
         margin: 0 15px;
+    }
+}
+
+@media(max-width:750px) {
+    .car{
+        width: 250px;
+        height: 300px;
+        /* margin: 0 15px; */
     }
 }
