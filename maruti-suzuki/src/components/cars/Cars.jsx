@@ -16,7 +16,7 @@ const Cars = () => {
 
   useEffect(() => {
     
-    document.addEventListener('DOMContentLoaded', () => {  //comment out this to turn on auto scrolling with line no. 60
+    // document.addEventListener('DOMContentLoaded', () => {  //comment out this to turn on auto scrolling with line no. 60
 
       const scrollContainer = document.querySelector('.scroll-container');
       const scrollContent = document.querySelector('.scroll-content');
@@ -57,7 +57,7 @@ const Cars = () => {
       
       startAutoScroll();
 
-  }); //comment-out
+  // }); //comment-out
   
   }, []);
 
