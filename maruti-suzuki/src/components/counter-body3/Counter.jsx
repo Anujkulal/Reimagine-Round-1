@@ -44,8 +44,8 @@ const Counter = () => {
     </div>
   
     <div className="button-container">
-      <button className="btn">BOOK A SHOWROOM VISIT</button>
-      <button className="btn">BOOK A SERVICE</button>
+      <button className="counter-btn">BOOK A SHOWROOM VISIT</button>
+      <button className="counter-btn">BOOK A SERVICE</button>
     </div>
   </div>
   );
