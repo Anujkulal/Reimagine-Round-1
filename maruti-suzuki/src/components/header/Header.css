@@ -120,7 +120,8 @@ header {
   
   .nav-btn {
     /* background-image: linear-gradient(to right, #005f9b, #a50292); */
-    background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    /* background-image: linear-gradient(to right, #9d8500, #951603); */
+    background-image: linear-gradient(to right, #b72205, #b56c03);
     /* background-color: #d32f2f; */
     color: #ffffff;
     font-size: 12px;
@@ -137,7 +138,6 @@ header {
   }
   
   .mid-navbar ul li a:hover {
-    background-image: linear-gradient(to right, #9d8500, #951603);
     box-shadow: 0 0 25px #e72508,
     0 0 100px #e72508,
     0 0 150px #e72508;

@@ -9,7 +9,7 @@ footer{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    min-height: 140vh;
+    /* min-height: 140vh; */
     font-family: "Poppins", sans-serif;
 }
 
