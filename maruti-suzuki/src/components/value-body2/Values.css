@@ -15,7 +15,7 @@
 }
 
 .values-heading {
-    font-size: clamp(2rem, 5vw, 5rem);
+    font-size: clamp(2rem, 4vw, 5rem);
     margin-bottom: 15px;
     color: #ffffff;
     text-align: center;

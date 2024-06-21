@@ -119,7 +119,8 @@ header {
   }
   
   .nav-btn {
-    background-image: linear-gradient(to right, #005f9b, #a50292);
+    /* background-image: linear-gradient(to right, #005f9b, #a50292); */
+    background-image: linear-gradient(to right, #9d8500, #951603);
     color: #ffffff;
     font-size: 12px;
     text-decoration: none;
