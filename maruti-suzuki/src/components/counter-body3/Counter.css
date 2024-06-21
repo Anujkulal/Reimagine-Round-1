@@ -88,9 +88,9 @@
   
   .counter-btn:hover {
     background-color: #c42a1a;
-    box-shadow: 0 0 25px #a50292,
-    0 0 100px #a50292,
-    0 0 150px #a50292;
+    box-shadow: 0 0 25px #e72508,
+    0 0 100px #e72508,
+    0 0 150px #e72508;
   }
   
   @media screen and (max-width: 1024px) {
