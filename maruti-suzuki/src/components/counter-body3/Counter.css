@@ -123,11 +123,15 @@
     border-radius: 0.5rem;
     margin: 0 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
+    transition: 0.3s;
   }
   
   .btn:hover {
     background-color: #c42a1a;
+    box-shadow: 0 0 25px #a50292,
+    0 0 100px #a50292,
+    0 0 150px #a50292;
   }
   
   @media screen and (max-width: 1024px) {
