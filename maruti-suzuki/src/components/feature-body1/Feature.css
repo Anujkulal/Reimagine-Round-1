@@ -23,7 +23,8 @@
   
   .feature-hero {
     padding: 0px 16px;
-    height: 100vh;
+    /* height: 100vh; */
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,7 +125,7 @@
   }
   
   .feature-main-title strong {
-    color: var(--primary-100);
+    color: #492B92;
   }
   
   .description-hero {
@@ -148,12 +149,17 @@
     background-size: 200% 200%;
     animation: bg-btn 3s linear alternate infinite;
     text-decoration: none;
+    transition: 0.5s;
   }
   
   .btn-primary:hover {
     transform: scale(0.98);
     box-shadow: 1px 1px var(--primary-100) inset,
                 -1px -1px var(--primary-100) inset;
+                background: linear-gradient(90deg, #5c33bd 2.09%, #3b1f83 100.18%);
+                box-shadow: 0 0 25px #7D49F8,
+                0 0 100px #7D49F8,
+                0 0 150px #7D49F8;
     transition: 0.5s ease-in-out;
   }
   
@@ -215,8 +221,8 @@
   @media screen and (min-width: 768px) {
     .btn-primary {
       align-self: center;
-      padding-left: 64px;
-      padding-right: 64px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
     .feature-main-title {
       max-width: 640px;
