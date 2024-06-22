@@ -1,29 +1,6 @@
-/* :root {
-    --surface-50: #FFFFFF;
-    --surface-100: #F7F9FD;
-    --surface-200: #ECEDEE;
-    --surface-300: #CBCFD2;
-    --surface-400: #A7AEB4;
-    --surface-500: #8E979F;
-    --surface-600: #6B767F;
-    --surface-700: #4F575E;
-    --surface-800: #33383D;
-    --surface-900: #131320;
-    --primary-50: #F8F5FF;
-    --primary-100: #B89CFC;
-    --primary-200: #7D49F8;
-    --primary-300: #6528F7;
-    --primary-400: #501BCE;
-  }
-  
-  body {
-    background-color: var(--surface-900);
-    font-family: "IBM Plex Sans", sans-serif;
-  } */
   
   .feature-hero {
     padding: 0px 16px;
-    /* height: 100vh; */
     margin-top: 30px;
     display: flex;
     flex-direction: column;
